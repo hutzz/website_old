@@ -126,3 +126,6 @@ body {
 	background-color: white;
 	border-radius: 64px 64px;
 }
+.project-desc {
+	font-size: 1.2vw;
+}
