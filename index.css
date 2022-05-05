@@ -26,7 +26,7 @@ body {
 #all-wrapper {
 	display: flex;
 	position: absolute;
-	top: 70vh;
+	top: 80vh;
 	flex-direction: column;
 	width: 100vw;
 	height: 10vh;
@@ -75,7 +75,7 @@ body {
 }
 #skills {
 	display: flex;
-	margin-top: 10%;
+	margin-top: 2vh;
 	width: 100vw;
 	justify-content: space-evenly;
 }
@@ -84,7 +84,7 @@ body {
 	max-width: 12vw;
 	-ms-flex-align: center;
 }
-#project-header {
+#internal-header {
 	font-size: 4vw;
 	color: white;
 	margin-top: 20vh;
@@ -92,7 +92,7 @@ body {
 #projects {
 	display: flex;
 	width: 100vw;
-	margin-top: 5vh;
+	margin-top: 0vh;
 	justify-content: space-evenly;
 }
 .project {
