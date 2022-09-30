@@ -98,8 +98,10 @@ body {
 	transform: scale(1.1);
 }
 .skill-img {
-	max-height: 12vh;
-	max-width: 12vw;
+	width: auto;
+	height: auto;
+	max-height: 75%;
+	max-width: 75%;
 	border-radius: 25% 25%; /* culprit of particle issues is here */
 	-ms-flex-align: center;
 	perspective: 1px; /* this fixes it... */
@@ -126,12 +128,22 @@ body {
 	border-radius: 64px 64px;
 	transition: 0.1s;
 }
+.project > a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: auto;
+	width: auto;
+	max-width: 100%;
+	max-height: 100%;
+}
 .project:hover {
 	transform: scale(1.1);
 }
+
 .project-images > img {
-	max-width: 11vw;
-	max-height: 11vh;
+	max-width: 80%;
+	max-height: 80%;
 }
 #desc-wrapper {
 	display: flex;
