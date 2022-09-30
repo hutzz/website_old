@@ -75,14 +75,17 @@ body {
 }
 #skills {
 	display: flex;
+	flex-direction: row;
 	margin-top: 2vh;
 	width: 100vw;
 	justify-content: space-evenly;
 }
-#skills > img {
+.skill-img {
 	max-height: 12vh;
 	max-width: 12vw;
+	border-radius: 25% 25%; /* culprit of particle issues is here */
 	-ms-flex-align: center;
+	perspective: 1px; /* this fixes it... */
 }
 #internal-header {
 	font-size: 4vw;
