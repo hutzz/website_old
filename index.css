@@ -1,3 +1,7 @@
+:root {
+	--main-background-colour: rgb(44, 43, 43);
+	--img-container-colour: rgb(29, 28, 28);
+}
 body {
 	margin: 0;
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
@@ -5,7 +9,7 @@ body {
 		"Helvetica Neue", sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	background-color: rgb(44, 43, 43);
+	background-color: var(--main-background-colour);
 }
 #backdrop {
 	display: flex;
@@ -80,6 +84,19 @@ body {
 	width: 100vw;
 	justify-content: space-evenly;
 }
+.skill-container {
+	display: flex;
+	background-color: var(--img-container-colour);
+	width: 8vw;
+	height: 16vh;
+	border-radius: 50% 50%;
+	align-items: center;
+	justify-content: center;
+	transition: 0.1s;
+}
+.skill-container:hover {
+	transform: scale(1.1);
+}
 .skill-img {
 	max-height: 12vh;
 	max-width: 12vw;
@@ -107,6 +124,10 @@ body {
 	height: 14vh;
 	background-color: white;
 	border-radius: 64px 64px;
+	transition: 0.1s;
+}
+.project:hover {
+	transform: scale(1.1);
 }
 .project-images > img {
 	max-width: 11vw;
