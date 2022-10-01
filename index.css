@@ -55,6 +55,12 @@ body {
 	align-items: center;
 	justify-content: space-between;
 }
+#main-imgs > a {
+	transition: 0.1s;
+}
+#main-imgs > a:hover {
+	transform: scale(1.1);
+}
 #main-imgs > a > img {
 	max-height: 120px;
 	max-width: 120px;
