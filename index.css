@@ -84,18 +84,41 @@ body {
 	width: 100vw;
 	justify-content: space-evenly;
 }
-.skill-container {
-	display: flex;
-	background-color: var(--img-container-colour);
+.flip-wrapper {
+	position: relative;
 	width: 8vw;
 	height: 16vh;
+	perspective: 1000px;
+	background-color: transparent;
+}
+.flip-wrapper-inner {
+	width: 100%;
+	height: 100%;
+	transition: transform 1s;
+	transform-style: preserve-3d;
+}
+.flip-wrapper:hover .flip-wrapper-inner {
+	transform: rotateY(180deg);
+}
+.skill-container-front,
+.skill-container-back {
+	position: absolute;
+	display: flex;
+	background-color: var(--img-container-colour);
+	width: 100%;
+	height: 100%;
 	border-radius: 50% 50%;
 	align-items: center;
 	justify-content: center;
-	transition: 0.1s;
+	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
 }
-.skill-container:hover {
-	transform: scale(1.1);
+.skill-container-back {
+	color: white;
+	transform: rotateY(180deg);
+}
+.skill-container-back > h1 {
+	font-size: 1.2vw;
 }
 .skill-img {
 	width: auto;
