@@ -1,6 +1,6 @@
 :root {
 	--main-background-colour: rgb(44, 43, 43);
-	--img-container-colour: rgb(29, 28, 28);
+	--accent-colour-1: rgb(29, 28, 28);
 }
 body {
 	margin: 0;
@@ -110,7 +110,7 @@ body {
 .skill-container-back {
 	position: absolute;
 	display: flex;
-	background-color: var(--img-container-colour);
+	background-color: var(--accent-colour-1);
 	width: 100%;
 	height: 100%;
 	border-radius: 50% 50%;
